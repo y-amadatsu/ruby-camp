@@ -1,6 +1,6 @@
 require_relative '../../1/4.rb'
 
-describe '3.rb' do
+describe do
   it '出力が同じであること' do
     expect_output = <<~OUTPUT
       1
@@ -29,6 +29,7 @@ describe '3.rb' do
       Fizz
       Buzz
     OUTPUT
+
     expect { main }.to output(expect_output).to_stdout
   end
 end
